@@ -58,7 +58,7 @@ export default function useGridInput({ data, path }: UseGridInputProps) {
                 setIndex(Math.max(0, index - 1));
                 break;
             case Keys.Down:
-                if (index + totalColumns > data.length) return;
+                if (index + totalColumns >= data.length) return;
                 setIndex(Math.min(data.length - 1, index + totalColumns));
                 break;
             case Keys.Up:

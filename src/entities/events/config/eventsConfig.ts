@@ -137,7 +137,7 @@ export const EventCardDimensions: Record<Device, EventCardDimensionProperties> =
                 right: 4,
             },
             padding: {
-                x: 2,
+                x: 4,
                 y: 2,
             }
         },

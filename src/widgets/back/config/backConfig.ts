@@ -4,6 +4,9 @@ interface BackDimensionProperties {
     border: {
         radius: number;
     };
+    label: {
+        font: number;
+    },
     padding: {
         x: number;
         y: number;
@@ -15,11 +18,14 @@ interface BackDimensionProperties {
 export const BackDimensions: Record<Device, BackDimensionProperties> = {
     tvFHD: {
         border: {
-            radius: 16,
+            radius: 20,
+        },
+        label: {
+            font: 24,
         },
         padding: {
-            x: 10,
-            y: 10,
+            x: 20,
+            y: 8,
         },
         right: 32,
         top: 32,
@@ -28,9 +34,12 @@ export const BackDimensions: Record<Device, BackDimensionProperties> = {
         border: {
             radius: 16,
         },
+        label: {
+            font: 16,
+        },
         padding: {
-            x: 10,
-            y: 10,
+            x: 16,
+            y: 6,
         },
         right: 32,
         top: 32,
@@ -39,9 +48,12 @@ export const BackDimensions: Record<Device, BackDimensionProperties> = {
         border: {
             radius: 8,
         },
+        label: {
+            font: 16,
+        },
         padding: {
-            x: 4,
-            y: 2,
+            x: 12,
+            y: 4,
         },
         right: 20,
         top: 32,
