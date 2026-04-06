@@ -4,12 +4,12 @@ import type { Device } from "./device";
 // Device dimensions: Media queries
 // ------------------------------------------------------------------------------------------------
 
-interface DeviceDimensions {
+interface DeviceDimensionProperties {
     width: number;
     height: number;
 }
 
-export const DeviceDimensions: Record<Device, DeviceDimensions> = {
+export const DeviceDimensions: Record<Device, DeviceDimensionProperties> = {
     tvFHD: {
         width: 1920,
         height: 1080,
@@ -28,15 +28,15 @@ export const DeviceDimensions: Record<Device, DeviceDimensions> = {
 // Shared UI
 // ------------------------------------------------------------------------------------------------
 
-// Main Title
+// Title
 
-interface MainTitleDimensions {
+interface TitleDimensionProperties {
     font: number;
     left: number;
     top: number;
 }
 
-export const MainTitleDimensions: Record<Device, MainTitleDimensions> = {
+export const TitleDimensions: Record<Device, TitleDimensionProperties> = {
     tvFHD: {
         font: 40,
         left: 50,
