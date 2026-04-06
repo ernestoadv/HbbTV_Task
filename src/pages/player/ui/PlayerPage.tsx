@@ -1,3 +1,8 @@
+import Background from "../../../shared/ui/background.tsx";
+import Title from "../../../shared/ui/title.tsx";
+
 export default function PlayerPage() {
-    return <div>PlayerPage</div>;
+    return <Background>
+        <Title>{"Player"}</Title>
+    </Background>;
 }

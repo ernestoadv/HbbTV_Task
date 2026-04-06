@@ -1,3 +1,8 @@
+import Background from "../../../shared/ui/background";
+import Title from "../../../shared/ui/title.tsx";
+
 export default function HomePage() {
-    return <div>HomePage</div>;
+    return <Background>
+        <Title>{"Home"}</Title>
+    </Background>
 }
