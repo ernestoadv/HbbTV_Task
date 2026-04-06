@@ -34,6 +34,7 @@ interface TitleDimensionProperties {
     font: number;
     left: number;
     top: number;
+    width: number;
 }
 
 export const TitleDimensions: Record<Device, TitleDimensionProperties> = {
@@ -41,15 +42,18 @@ export const TitleDimensions: Record<Device, TitleDimensionProperties> = {
         font: 40,
         left: 50,
         top: 70,
+        width: 1000,
     },
     tvHD: {
         font: 40,
         left: 50,
         top: 70,
+        width: 1000,
     },
     mobile: {
         font: 30,
         left: 25,
         top: 24,
+        width: 200,
     },
 }

@@ -9,16 +9,17 @@ import type { Event } from "../model/eventsModel";
 export interface EventCardProps {
   event: Event;
   focused: boolean;
+  callback: () => void;
 }
 
-export default function EventCard({ event, focused }: EventCardProps) {
+export default function EventCard({ event, focused, callback }: EventCardProps) {
   const subtitle = useMemo(() => {
     const season = event.season ? `S${event.season}` : "";
     const episode = event.episode ? `E${event.episode}` : "";
     return `${season}${episode}`;
   }, [event]);
   return (
-    <Container $focused={focused}>
+    <Container $focused={focused} onClick={callback}>
       <Image src={event.thumbnail} alt={event.title} />
       <Labels labels={event.metadata} />
       <Subtitle>{subtitle}</Subtitle>
